@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SSAS Visit Guide – Plan Your Visit, Explore More</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>
+:root{--bg:#fbf8f4;--surface:#fff;--ink:#2a1a1a;--muted:#6f6058;--red:#8b0e12;--red2:#b01c20;--line:#e8dfd6;--soft:#f3ebe3;--on-red:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#17100f;--surface:#221918;--ink:#f3e9e3;--muted:#b3a299;--red:#e2575b;--red2:#f07175;--line:#3a2b29;--soft:#2a1f1d;--on-red:#17100f}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#17100f;--surface:#221918;--ink:#f3e9e3;--muted:#b3a299;--red:#e2575b;--red2:#f07175;--line:#3a2b29;--soft:#2a1f1d;--on-red:#17100f}
+*{box-sizing:border-box}html{scroll-padding-top:80px;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 Inter,system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+h1,h2,h3,.serif{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.05;margin:0}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{max-width:1100px;margin:auto;display:flex;align-items:center;gap:20px;padding:12px 20px}
+.logo{font:600 26px "Cormorant Garamond",serif;color:var(--red);letter-spacing:.02em;font-style:italic}
+nav{display:flex;gap:22px;margin:0 auto;font-size:14px}
+nav a{padding:6px 0;border-bottom:2px solid transparent;color:var(--muted)}
+nav a.on{color:var(--ink);border-color:var(--red)}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:99px;padding:10px 20px;font:500 14px Inter,sans-serif;border:1px solid var(--red);cursor:pointer;background:var(--red);color:var(--on-red)}
+.btn.ghost{background:transparent;color:var(--red)}
+.hero{position:relative;overflow:hidden;max-width:1100px;margin:24px auto;border-radius:28px;background:var(--soft);min-height:440px;display:grid;grid-template-columns:1.1fr 1fr;align-items:center}
+.hero .txt{padding:48px}
+.hero h1{font-size:clamp(44px,7vw,84px);color:var(--ink)}
+.hero .tag{font:italic 500 24px "Cormorant Garamond",serif;color:var(--red);margin:14px 0}
+.hero p{color:var(--muted);max-width:380px}
+.art{position:relative;height:100%;min-height:300px;background:linear-gradient(160deg,#d9c7b3,#a8876a 55%,#5a3a28)}
+.art i{position:absolute;display:block;border-radius:6px}
+.art .a{width:26%;height:42%;left:12%;top:14%;background:linear-gradient(135deg,#2b221c,#c9a57a)}
+.art .b{width:20%;height:32%;left:44%;top:20%;background:linear-gradient(135deg,#8b0e12,#e8b88a)}
+.art .c{width:22%;height:38%;left:68%;top:12%;background:linear-gradient(200deg,#e9dac6,#3a2a20)}
+.art .s{width:30%;height:44%;left:34%;bottom:0;border-radius:50% 50% 0 0;background:radial-gradient(circle at 50% 30%,transparent 14%,#4a2d1d 15%)}
+.blob{position:absolute;width:260px;height:260px;border-radius:50%;background:var(--red);opacity:.9;left:-110px;top:-110px}
+section.w{max-width:1100px;margin:auto;padding:36px 20px}
+.eyebrow{font:600 12px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.grid{display:grid;gap:16px}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:1fr 1fr}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
+.card h3{font-size:28px;margin-bottom:6px}
+.card.link{cursor:pointer;transition:transform .2s}.card.link:hover{transform:translateY(-3px)}
+.ico{width:44px;height:44px;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-size:20px;margin-bottom:12px}
+.pagehead{max-width:1100px;margin:24px auto 0;padding:40px 20px 10px}
+.pagehead h1{font-size:clamp(46px,8vw,86px)}
+.pagehead p{font:italic 500 22px "Cormorant Garamond",serif;color:var(--red);margin:10px 0 0}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.chip{border:1px solid var(--red);background:transparent;color:var(--red);border-radius:99px;padding:7px 18px;font:500 13px Inter;cursor:pointer}
+.chip.on{background:var(--red);color:var(--on-red)}
+.days{display:flex;gap:6px;overflow-x:auto;padding-bottom:10px;margin-bottom:18px}
+.day{flex:0 0 52px;text-align:center;border:1px solid var(--line);background:var(--surface);border-radius:14px;padding:8px 0;cursor:pointer;font-size:12px;color:var(--muted)}
+.day b{display:block;font:600 18px "Cormorant Garamond",serif;color:var(--ink)}
+.day.dot::after{content:"";display:block;width:5px;height:5px;border-radius:50%;background:var(--red);margin:3px auto 0}
+.day.on{background:var(--red);border-color:var(--red)}.day.on,.day.on b{color:var(--on-red)}.day.on::after{background:var(--on-red)}
+.ev .thumb{height:120px;border-radius:14px;margin-bottom:14px}
+.tagc{font:600 11px Inter;letter-spacing:.12em;color:var(--red);text-transform:uppercase}
+.meta{font-size:13px;color:var(--muted);margin:2px 0}
+.price{font:500 40px "Cormorant Garamond",serif;color:var(--red)}
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:500;list-style:none;display:flex;justify-content:space-between;gap:10px}
+summary::after{content:"⌄";color:var(--red)}details[open] summary::after{content:"⌃"}
+details p{margin:8px 0 0;color:var(--muted);font-size:15px}
+.sub{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.sub input{flex:1;min-width:200px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:99px;padding:10px 18px;font:inherit}
+.map{height:180px;border-radius:16px;margin-bottom:14px;background:linear-gradient(45deg,transparent 48%,var(--line) 49% 51%,transparent 52%),linear-gradient(-30deg,transparent 48%,var(--line) 49% 51%,transparent 52%),var(--soft);display:grid;place-items:center;font-size:40px}
+.share{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+#qr{background:#fff;padding:12px;border-radius:14px;line-height:0}
+footer{border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:13px;padding:28px 20px}
+.view{display:none}.view.on{display:block;animation:f .4s}@keyframes f{from{opacity:0;transform:translateY(8px)}}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.hero .txt{padding:36px 26px}.art{min-height:220px}.g3,.g2{grid-template-columns:1fr}.bar{flex-wrap:wrap;gap:8px}nav{order:3;width:100%;overflow-x:auto;gap:18px;margin:0}.bar .btn{margin-left:auto}}
+</style>
+</head>
+<body>
+<header><div class="bar">
+<a href="#home" class="logo">ssas</a>
+<nav id="nav">
+<a href="#home" data-v="home">Home</a><a href="#whats-on" data-v="whats-on">What’s On</a><a href="#ticket-visit" data-v="ticket-visit">Ticket &amp; Visit</a><a href="#before-you-visit" data-v="before-you-visit">Before You Visit</a>
+</nav>
+<a class="btn" href="#ticket-visit">Plan Your Visit →</a>
+</div></header>
+
+<main>
+<!-- HOME -->
+<div class="view" id="v-home">
+<div class="hero">
+<div class="txt">
+<div class="eyebrow">SSAS Visit Guide</div>
+<h1>Selasar Sunaryo Art Space</h1>
+<div class="tag">Art. Community. For All.</div>
+<p>Ruang untuk merasakan seni kontemporer, bertukar gagasan, dan menjadi bagian dari komunitas kreatif di Bandung.</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:22px"><a class="btn" href="#whats-on">Explore What’s On →</a><a class="btn ghost" href="#ticket-visit">Plan Your Visit</a></div>
+</div>
+<div class="art"><div class="blob"></div><i class="a"></i><i class="b"></i><i class="c"></i><i class="s"></i></div>
+</div>
+<section class="w">
+<div class="eyebrow">Plan Your Visit, Explore More.</div>
+<h2 style="font-size:44px;margin:6px 0 22px">Semua informasi sebelum kamu datang</h2>
+<div class="grid g3">
+<a class="card link" href="#whats-on"><div class="ico">🎨</div><h3>What’s On</h3><p class="meta">Pameran, program, dan kegiatan komunitas yang sedang berlangsung maupun akan datang.</p></a>
+<a class="card link" href="#ticket-visit"><div class="ico">🎟️</div><h3>Ticket &amp; Visit</h3><p class="meta">Pilihan tiket, harga, jam operasional, dan alamat dalam satu halaman.</p></a>
+<a class="card link" href="#before-you-visit"><div class="ico">🧭</div><h3>Before You Visit</h3><p class="meta">Lokasi, akses perjalanan, dan FAQ yang paling sering ditanyakan.</p></a>
+</div>
+</section>
+<section class="w">
+<div class="card share">
+<div id="qr"></div>
+<div style="flex:1;min-width:220px"><div class="eyebrow">Scan &amp; Share</div><h3 style="font-size:34px;margin:4px 0">Bawa panduan ini di ponselmu</h3><p class="meta">Pindai QR code ini untuk membuka SSAS Visit Guide, atau bagikan ke teman yang ingin ikut berkunjung.</p><button class="btn ghost" id="copy">Salin tautan</button></div>
+</div>
+</section>
+</div>
+
+<!-- WHAT'S ON -->
+<div class="view" id="v-whats-on">
+<div class="pagehead"><div class="eyebrow">Pameran &amp; Program</div><h1>What’s On</h1><p>Discover our latest exhibitions, programs, and community events.</p></div>
+<section class="w">
+<div class="chips" id="chips"></div>
+<div class="eyebrow" style="margin-bottom:8px">November 2025 · pilih tanggal</div>
+<div class="days" id="days"></div>
+<div class="grid g3" id="events"></div>
+<p class="meta" id="empty" style="display:none">Belum ada kegiatan pada tanggal ini. Coba pilih tanggal lain atau lihat semua kegiatan.</p>
+</section>
+<section class="w"><div class="card"><div class="eyebrow">Stay Updated with SSAS</div><h3 style="font-size:30px;margin:4px 0 12px">Dapatkan kabar pameran dan acara terbaru</h3>
+<div class="sub"><input id="mail" type="email" placeholder="Your Email Address"><button class="btn" id="subbtn">Subscribe</button></div><p class="meta" id="subok"></p></div></section>
+</div>
+
+<!-- TICKET -->
+<div class="view" id="v-ticket-visit">
+<div class="pagehead"><div class="eyebrow">Tiket &amp; Kunjungan</div><h1>Ticket &amp; Visit Info</h1><p>Plan your visit with ease.</p></div>
+<section class="w">
+<div class="grid g2">
+<div class="card"><div class="tagc">Single Entry</div><div class="price">Rp50.000</div><p class="meta">Akses ke galeri dan pameran.</p></div>
+<div class="card"><div class="tagc">Full Access</div><div class="price">Rp75.000</div><p class="meta">Akses ke seluruh program di SSAS.</p></div>
+</div>
+<div style="text-align:center;margin:22px 0"><a class="btn" href="https://selasarsunaryo.org" target="_blank" rel="noopener">Beli Tiket Sekarang →</a><p class="meta">Pembelian melalui kanal resmi SSAS.</p></div>
+<div class="grid g2">
+<div class="card"><div class="ico">🕙</div><h3>Jam Operasional</h3><p class="meta">Selasa – Minggu<br>10.00 – 17.00 WIB</p></div>
+<div class="card"><div class="ico">📍</div><h3>Alamat</h3><p class="meta">Jl. Bukit Pakar Timur No. 100, Ciburial, Cimenyan, Bandung, Jawa Barat 40198</p></div>
+<div class="card"><div class="ico">🚶</div><h3>Akses</h3><p class="meta">Mudah dijangkau dengan kendaraan pribadi maupun transportasi umum.</p></div>
+<div class="card"><div class="ico">🗺️</div><h3>Peta Lokasi</h3><p class="meta"><a style="color:var(--red)" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Selasar+Sunaryo+Art+Space+Bandung">Lihat petunjuk arah melalui Google Maps ↗</a></p></div>
+</div>
+<div class="card" style="margin-top:16px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap"><div><h3 style="font-size:28px">Informasi Kunjungan Lainnya</h3><p class="meta">Cek FAQ untuk pertanyaan seputar kunjungan Anda.</p></div><a class="btn ghost" href="#before-you-visit">Lihat FAQ</a></div>
+</section>
+</div>
+
+<!-- BEFORE YOU VISIT -->
+<div class="view" id="v-before-you-visit">
+<div class="pagehead"><div class="eyebrow">Panduan Sebelum Berkunjung</div><h1>Before You Visit</h1><p>Everything you need for a thoughtful visit.</p></div>
+<section class="w">
+<div class="grid g2" style="align-items:start">
+<div>
+<div class="card"><div class="map">📍</div><h3>Selasar Sunaryo Art Space</h3><p class="meta">Jl. Bukit Pakar Timur No. 100, Ciburial, Cimenyan, Bandung, Jawa Barat 40198</p><p style="margin-top:12px"><a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Selasar+Sunaryo+Art+Space+Bandung">Open in Google Maps ↗</a></p></div>
+<div class="card" style="margin-top:16px"><div class="ico">🚗</div><h3>Getting Here</h3><p class="meta">Berlokasi di kawasan Dago Pakar. Rencanakan rute perjalananmu sebelum berangkat.</p></div>
+</div>
+<div>
+<h2 style="font-size:36px;margin-bottom:14px">Frequently Asked Questions</h2>
+<details><summary>Where is SSAS located?</summary><p>Jl. Bukit Pakar Timur No. 100, Ciburial, Cimenyan, Bandung, Jawa Barat 40198.</p></details>
+<details><summary>What are the opening hours?</summary><p>Tuesday–Sunday, 10.00–17.00 WIB.</p></details>
+<details><summary>Is SSAS open on national holidays?</summary><p>SSAS is closed on national holidays.</p></details>
+<details><summary>Where can I find current exhibitions and programs?</summary><p>Visit the What’s On page for the latest exhibition and program information.</p></details>
+<div class="card" style="margin-top:16px"><p class="meta" style="margin:0">📞 (+62) 22 250 7939<br>🌐 <a style="color:var(--red)" href="https://selasarsunaryo.org" target="_blank" rel="noopener">selasarsunaryo.org</a></p></div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<footer>SSAS Visit Guide · Prototype oleh mahasiswa S1 Administrasi Bisnis, Universitas Telkom · 2026</footer>
+
+<script>
+var EV=[
+{t:"Ruang di Antara",by:"by Studio Pelita",c:"Exhibitions",l:"EXHIBITION",s:[2025,10,16],e:[2025,11,30],d:"16 Oct – 30 Nov 2025",p:"Selasar Sunaryo Art Space",g:"linear-gradient(135deg,#2b221c,#c9a57a)"},
+{t:"Ceramic Workshop: Membentuk Cerita",by:"",c:"Programs",l:"PROGRAM",s:[2025,11,22],e:[2025,11,22],d:"22 Nov 2025",p:"Ruang Workshop SSAS",g:"linear-gradient(135deg,#d9c7b3,#8a6a50)"},
+{t:"Diskusi Seni: Ruang dan Waktu",by:"",c:"Community",l:"COMMUNITY EVENT",s:[2025,11,29],e:[2025,11,29],d:"29 Nov 2025",p:"Ruang Diskusi SSAS",g:"linear-gradient(135deg,#3a1c1c,#b01c20)"}];
+var cat="All Events",sel=null,$=function(i){return document.getElementById(i)};
+function key(a){return a[0]*10000+a[1]*100+a[2]}
+function render(){
+var h="";["All Events","Exhibitions","Programs","Community"].forEach(function(c){h+='<button class="chip'+(c===cat?' on':'')+'" data-c="'+c+'">'+c+'</button>'});
+$("chips").innerHTML=h;
+var d="",wd=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+for(var i=1;i<=30;i++){var k=20251100+i,dot=EV.some(function(x){return key(x.s)<=k&&key(x.e)>=k});
+d+='<div class="day'+(dot?' dot':'')+(sel===i?' on':'')+'" data-d="'+i+'">'+wd[new Date(2025,10,i).getDay()]+'<b>'+i+'</b></div>'}
+$("days").innerHTML=d;
+var out="",n=0;EV.forEach(function(x){
+if(cat!=="All Events"&&x.c!==cat)return;
+if(sel&&!(key(x.s)<=20251100+sel&&key(x.e)>=20251100+sel))return;n++;
+out+='<div class="card ev"><div class="thumb" style="background:'+x.g+'"></div><div class="tagc">'+x.l+'</div><h3 style="font-size:26px">'+x.t+'</h3>'+(x.by?'<p class="meta">'+x.by+'</p>':'')+'<p class="meta">🗓 '+x.d+'</p><p class="meta">📍 '+x.p+'</p></div>'});
+$("events").innerHTML=out;$("empty").style.display=n?"none":"block"}
+document.addEventListener("click",function(e){
+var c=e.target.closest("[data-c]");if(c){cat=c.dataset.c;render()}
+var d=e.target.closest("[data-d]");if(d){var v=+d.dataset.d;sel=sel===v?null:v;render()}});
+$("subbtn").onclick=function(){var m=$("mail").value;$("subok").textContent=/\S+@\S+\.\S+/.test(m)?"Terima kasih! Kami akan mengirim kabar terbaru ke "+m+".":"Mohon masukkan alamat email yang valid."};
+function route(){var v=(location.hash||"#home").slice(1);if(!$("v-"+v))v="home";
+document.querySelectorAll(".view").forEach(function(x){x.classList.toggle("on",x.id==="v-"+v)});
+document.querySelectorAll("#nav a").forEach(function(a){a.classList.toggle("on",a.dataset.v===v)});window.scrollTo(0,0)}
+window.addEventListener("hashchange",route);route();render();
+try{var u=(window.top!==window&&document.referrer)?location.href:location.href;new QRCode($("qr"),{text:u.split("#")[0],width:132,height:132,colorDark:"#8b0e12",colorLight:"#ffffff"})}catch(e){$("qr").textContent="QR tidak tersedia"}
+$("copy").onclick=function(){var b=this;try{navigator.clipboard.writeText(location.href.split("#")[0]).then(function(){b.textContent="Tersalin ✓"})}catch(e){b.textContent="Salin manual dari address bar"}};
+</script>
+</body>
+</html>
